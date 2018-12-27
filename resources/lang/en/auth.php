@@ -15,5 +15,21 @@ return [
 
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-
+    'title' => 'laravel',
+    'login' => 'Login',
+    'register' => 'Register',
+    'logout' => 'Logout',
+    'labelname' => 'Name',
+    'labelemail' => 'E-mail Address',
+    'labelpassword' => 'Password',
+    'labelconfirmpassword' => 'Confirm Password', 
+    'remember' => 'Remember Me',
+    'forgot' => 'Forgot Your Password ?',
+    'resetpassword' => 'Reset Password',
+    'buttonresetpassword' => 'Send Password Reset Link',
+    'verifyemail' => 'Verify Your Email Address',
+    'msverifyemail' => 'A fresh verification link has been sent to your email address.',
+    'msverifyemail1' => 'Before proceeding, please check your email for a verification link.',
+    'msverifyemail2' => 'If you did not receive the email',
+    'msverifyemail3' => 'click here to request another.'
 ];
