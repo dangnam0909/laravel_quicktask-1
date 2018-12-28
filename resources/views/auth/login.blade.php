@@ -28,7 +28,7 @@
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                    {!! Form::checkbox('remember', old('remember')?'checked':'',['class' => "form-check-input"]) !!}
+                                    {!! Form::checkbox('remember', old('remember')?'checked':'', ['class' => "form-check-input"]) !!}
                                     {!! Form::label('remember', trans('auth.remember'), ['class' => 'form-check-label']) !!}
                                 </div>
                             </div>
@@ -36,7 +36,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                               {!! Form::submit(trans('auth.login'),['class' => 'btn btn-primary']) !!}
+                               {!! Form::submit(trans('auth.login'), ['class' => 'btn btn-primary']) !!}
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         @lang('auth.forgot')
