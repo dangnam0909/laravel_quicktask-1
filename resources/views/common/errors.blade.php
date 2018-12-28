@@ -25,7 +25,7 @@
 @endif
 @if (count($errors) > 0)
     <div class="alert alert-danger">
-        <strong>@lang(home.messageerror)</strong>
+        <strong>@lang('home.messageerror')</strong>
 
         <br><br>
 

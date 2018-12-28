@@ -14,7 +14,7 @@
                             {!! Form::label('name', trans('auth.labelname'), ['class' => 'col-md-4 col-form-label text-md-right']) !!}
 
                             <div class="col-md-6">
-                                {!! Form::text('name', old('name'),['class' => 'form-control', 'id' => 'name']) !!}
+                                {!! Form::text('name', old('name'), ['class' => 'form-control', 'id' => 'name']) !!}
                                 @include('common.errors')
                             </div>
                         </div>
