@@ -7,6 +7,8 @@ return [
     'login' => 'Đăng Nhập',
     'register' => 'Đăng Kí',
     'logout' => 'Đăng Xuất',
+    'labeltask' => 'Nhiệm Vụ',
+    'addtask' => 'Thêm Nhiệm Vụ',
     'labelname' => 'Họ Tên',
     'labelemail' => 'Địa Chỉ E-mail',
     'labelpassword' => 'Mật Khẩu',
