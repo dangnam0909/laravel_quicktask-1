@@ -36,3 +36,11 @@
         </ul>
     </div>
 @endif
+@if(Session::has('messageD'))
+    <div class="alert alert-danger alert-dismissible fade show col col-8" role="alert">
+        <strong>{{ Session::get('messageD') }}</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+@endif
