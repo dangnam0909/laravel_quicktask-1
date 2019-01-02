@@ -16,7 +16,7 @@
                             {!! Form::label('email', trans('auth.labelemail'), ['class' => 'col-md-4 col-form-label text-md-right']) !!}
 
                             <div class="col-md-6">
-                                {!! Form::email('email', old('email'),['class' => 'form-control', 'id' => 'email']) !!}
+                                {!! Form::email('email', old('email'), ['class' => 'form-control', 'id' => 'email']) !!}
                                 @include('common.errors')
                             </div>
                         </div>
