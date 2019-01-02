@@ -33,17 +33,20 @@
                         <th>@lang('home.titletask')</th>
                         <th>&nbsp;</th>
                     </thead>
-
+                    
                     <tbody>
                         @foreach ($tasks as $task)
+                        {!! Form::open(['method' => 'DELETE', 'route' => ['task.delete', $task->id]]) !!}
                             <tr>
                                 <td class="table-text">
                                     <div>{{ $task->name }}</div>
                                 </td>
 
                                 <td>
+                                    {!! Form::submit(trans('home.deletetask'), ['class' => 'btn btn-default']) !!}
                                 </td>
                             </tr>
+                        {!! Form::close() !!}
                         @endforeach
                     </tbody>
                 </table>

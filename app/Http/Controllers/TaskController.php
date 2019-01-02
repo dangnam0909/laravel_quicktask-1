@@ -12,6 +12,7 @@ class TaskController extends Controller
         $tasks = Task::orderBy('created_at', 'ASC')->get();
     	return view('tasks.index', compact('tasks'));
 	}
+    
     public function store(TaskRequest $request) 
     {
     	$name = $request->name;
@@ -19,5 +20,17 @@ class TaskController extends Controller
         	'name' => $name,
    		]);
     	return redirect('/tasks');
+    }
+
+    public function delete($id)
+    {
+        try {
+            $task = Task::findOrFail($id);
+            $task->delete();
+            return redirect("/tasks")->with('messageD', trans('home.message-del-success'));
+        } 
+        catch (Exception $exception) {
+            return redirect("/tasks")->with('messageD', trans('home.message-del-fail'));
+        }
     }
 }
